@@ -10,25 +10,21 @@
 <body>
     <div id="navbar">
         <div id="box1">
-            <div> <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt=""></div>
+            <div> 
+                <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt="">
+            </div>
                
-    <div><select name="" id="abc" >
-        <option value="" style="width: 10px;">More travel</option>
+           <div>
+                <select name="" id="abc" >
+                    <option value="" style="width: 10px;">More travel</option>
 
-        <option value="">Packages</option>
-        <option value="">Stays</option>
-        <option value="" id="flight">Flights</option>
-        <option value="">cars   </option>
+                    <option value="Packages">Packages</option>
+                    <option value="Stays">Stays</option>
+                    <option value="Flights" >Flights</option>
+                    <option value="cars">cars   </option>
 
-<script>
-    document.getElementById("flight").addEventListener("click",flight())
-   {
-         window.location.href="flight.html"
-     }
-</script>
-
-   
-    </select></div>
+                </select>
+           </div>
         </div>
         <div id="box2">
             <div><h2 id="white1">List your property</h2></div>
@@ -37,35 +33,45 @@
             <div><h2 id="white1">sign in</h2></div>
         </div>
     </div>
+
+<!-- <script>
+    document.getElementById("flight").addEventListener("click",flight())
+   {
+         window.location.href="flight.html"
+     }
+</script> -->
+
+   
+  
     <!-- ............................................. -->
     <!-- ticketing -->
     <div id="ticket-counter">
        
-    <div id="counter">
-        <div id="cat">
-            <div><h2 id="ge">Stays</h2></div>
-            <div><h2 >Flights</h2></div>
-            <div><h2 >Cars</h2></div>
-            <div><h2>Packages    </h2></div>
-            <div><h2 >Things to do</h2></div>
-            <div><h2 >Cruises</h2></div>
-        
+        <div id="counter">
+                <div id="cat">
+                    <div><h2 id="ge">Stays</h2></div>
+                    <div><h2 ><a href="flight.html">Flights</a></h2></div>
+                    <div><h2 >Cars</h2></div>
+                    <div><h2>Packages    </h2></div>
+                    <div><h2 >Things to do</h2></div>
+                    <div><h2 >Cruises</h2></div>
+                
+                </div>
+                <hr width="80%">
+
+                <div id="select">
+                    <div id="long"> </div>
+                    <div  id="small"><h4>check in <br><input id="date" type="date"></h4></div>
+                    <div id="small"><h4>check-out <br><input id="date" type="date"></h4></div>
+                    <div id="medium"></div>
+
+
+
+                </div>
+            
+            <button id="btn1"> Search</button>
+
         </div>
-        <hr width="80%">
-
-        <div id="select">
-            <div id="long"> </div>
-            <div  id="small"><h4>check in <br><input id="date" type="date"></h4></div>
-            <div id="small"><h4>check-out <br><input id="date" type="date"></h4></div>
-            <div id="medium"></div>
-
-
-
-        </div>
-        
-    <button id="btn1"> Search</button>
-
-    </div>
   
     </div>
 
@@ -144,3 +150,13 @@
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("#abc").addEventListener("change",myfunction)
+    function myfunction(){
+       var selected= document.querySelector("#abc").value;
+       if(selected=="Flights")
+       {
+           window.location.href="flight.html"
+       }
+    }
+</script>
