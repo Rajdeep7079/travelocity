@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <div id="navbar">
         <div id="box1">
             <div> <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt=""></div>
@@ -54,16 +55,30 @@
         <hr width="80%">
 
         <div id="select">
-            <div id="long"> </div>
+            <div id="long">
+                <img height="40px" width="40px" style="padding: 10px 10px;" src="https://thumbs.dreamstime.com/b/blue-pin-symbol-blue-pin-symbol-isolated-white-background-176163168.jpg" alt="">
+           <!-- <h2>Going to</h2> -->
+           <input type="text" placeholder="Going to" id="goingto">
+            </div>
             <div  id="small"><h4>check in <br><input id="date" type="date"></h4></div>
             <div id="small"><h4>check-out <br><input id="date" type="date"></h4></div>
-            <div id="medium"></div>
+            <div id="medium">
+                <img height="40px" width="40px" style="padding: 10px 10px;" src="https://thumbs.dreamstime.com/b/person-icon-flat-style-man-symbol-person-icon-flat-style-man-symbol-isolated-white-background-simple-people-abstract-icon-118611127.jpg" alt="">
+            <p>Travellers</p><br>
+            <h2>1 room,2 Travellers</h2>
+            </div>
 
-
-
+           
         </div>
         
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Add a flight</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle1"> Add a car</label>
+    
     <button id="btn1"> Search</button>
+   
+    
 
     </div>
   
@@ -134,13 +149,61 @@
         <div>
             <h2>change or cancel a trip</h2>
             <p id="para">make updates to your itenery or cancel a booking</p>
+           
         </div>
         <div>
             <h2>use a credit or coupon</h2>
+            <p id="para">Apply a coupon code or a credit to a new trip</p>
+
         </div>
         <div>
             <h2>Track your refund</h2>
+            <p id="para">check the status of refund currently in progress</p>
+
         </div>
     </div>
+
+    <video  height="500" width="100%" controls ><source src="https://www.youtube.com/embed/ItS8X0SjT4s?list=TLPQMDUwNTIwMjKKC_iD6nNdlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" type="Video/Mp4"> 
+    </video>
+
+
+    
+
+    <!-- download -->
+<div id="download">
+    <div id="photo"> 
+        <img height="100%" width="100%" src="https://a.travel-assets.com/mad-service/footer/marquee/TVLY_App_Footer_v1.jpg" alt="">
+    </div>
+    <div id="dtext">
+        <h1>Wander Wisely with the Travelocity app</h1> 
+    <ul>
+        <li>Get helpful alerts about flight status and gate numbers</li>
+        <li>
+            Access all your travel details, even when offline</li>
+        <li>easily contact your hotel by messaging them right in the app</li>
+    </ul>
+    
+
+    <h2>Text  yourself a download link</h3>
+
+
+        <div id="innerdiv">
+           <div>
+               <p>country code :IN(+91)</p>
+               
+           </div>
+           <div>
+               <input type="text " placeholder="phone number" style="border:none;outline:none;height: 90%; margin-left: 5px;font-size: 15px;">
+           </div>
+           <div id="blue">
+               <h2>Get the app</h2>
+           </div>
+        </div>
+    </div>
+    <div style="background-color: white;">
+        <img id="qr" src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_travelocity.png" alt="">
+    <h2>Scan the QR code</h2>
+    </div>
+</div>
 </body>
 </html>
