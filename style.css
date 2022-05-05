@@ -1,0 +1,267 @@
+#navbar{
+    width: 100%;
+    background-color: #0a438b;
+    height: 100px;
+    display: flex;
+}
+#box1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#box1>div{
+width: 50%;
+height: 100%;
+}
+#box1>div>img{
+    height: 45px;
+    padding: 20px;
+}
+#white1{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#box2{
+    display: flex;
+    width: 50%;
+   margin-left: 600px;
+    
+}
+#box2 div{
+width: 27%;
+height: 100%;
+color: white;
+}
+#box2 h2{
+    font-size: 19px;
+}
+#box1,#box2 div:hover{
+    cursor: pointer;
+}
+#ticket-counter{
+    height: 600px;
+    width: 100%;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+background-size: 100% 100%;
+
+}
+#counter{
+width: 90%;
+height: 400px;
+background-color: white;
+border-radius: 20px;
+margin: auto;
+
+
+}
+#cat{
+    width: 60%
+    ;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#cat>div{
+    width: 20%;
+}
+#cat>div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+ 
+}
+#cat h2{
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#select{
+    display: flex;
+    width: 90%;
+    margin: auto;;
+    justify-content: space-between;
+}
+#long{
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid;
+    
+
+
+}
+#medium{
+    width: 260px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 20px;
+
+}
+#small{
+    box-sizing: border-box;
+    height: 60px;
+    width: 190px;
+    border: 1px solid;
+    border-radius: 20px;
+
+
+}
+#small h4{
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+
+}
+#date{
+    border: none;
+}
+#long:hover{
+    box-sizing: border-box;
+    cursor: pointer;
+border: 4px solid #0a438b;
+}
+#medium:hover{
+    cursor: pointer;
+    box-sizing: border-box;
+
+    border: 4px solid #0a438b;
+}
+#small:hover{
+cursor: pointer;
+box-sizing: border-box;
+
+border: 3px solid #0a438b;
+}
+#btn1{
+    cursor: pointer;
+    width: 190px;
+    height: 50px;
+    background-color: #0a438b;
+    color: white;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    margin-top: 200px;
+    font-size: 20px;
+    border: #0a438b;
+}
+#gallery1{
+    display: flex;
+margin: auto;
+    width: 95%;
+
+    height: 340px;
+}
+#gallery1>div{
+    margin-top: 30px;
+    border-radius: 20px;
+
+    width: 38%;
+    margin-left: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+  
+}
+#gallery1>div:hover{
+cursor: pointer;
+}
+
+#para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    padding-left: 10px;
+   margin-top: -1px;
+}
+#gallery2{
+
+    margin-top: 30px;
+    display: flex;
+    height: 290px;
+    width: 90%;
+    margin:auto
+}
+#gallery2>div{
+height: 100%;
+width: 50%;
+margin-top: 40px;
+margin-left: 20px;
+margin-bottom: 30px;
+}
+#pic1{
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_AllInclusive_imgB_1199x399_20211104.jpg");
+   background-size: 100% 100%;
+-webkit-filter: brightness(70%);
+}
+#pic2{
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_LastMinute_imgB_1199x399_20211104.jpg");
+    background-size: 100% 100%;
+    -webkit-filter: brightness(70%);
+}
+#white{
+    color :white;
+    padding: 30px 10px;
+}
+.h1{
+    margin-top: 100px;
+    margin-left: 90px;
+}
+#album{
+    margin-top: 14px;
+    height: 150px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+#album>div{
+    border-radius: 10px;
+    width: 28%;
+    height: 120%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    margin-left: 25px;
+
+}
+#album img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+#abc{
+    border:#0a438b;
+    background-color: #0a438b;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#abc option{
+    height: 190px;
+    width: 200px
+}
+#offer{
+    margin-top:-38px ;
+    color:yellow;
+    text-decoration: double;
+}
+#cancellation{
+height: 90px;
+width: 90%;
+margin: auto;
+display: flex;
+}
+#cancellation div{
+border: 1px solid;
+border-radius: 12px;
+    width: 35%;
+    height: 100%;
+    margin-left: 10px;
+
+}
+#cancellation>div h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+
+}
