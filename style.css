@@ -4,6 +4,16 @@
     height: 100px;
     display: flex;
 }
+#goingto{
+    font-size: 20px;
+    border: none;
+    border: white;
+    outline: none;
+
+}
+#body{
+    background-color: whitesmoke;
+}
 #box1{
     width: 25%;
     height: 100%;
@@ -24,6 +34,11 @@ height: 100%;
     padding: 20px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#vehicle1,#vehicle2{
+    margin-top: 30px;
+    size: 40px;
+   margin-left: 20px;
 }
 #box2{
     display: flex;
@@ -91,16 +106,41 @@ margin: auto;
     height: 60px;
     border-radius: 20px;
     border: 1px solid;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
     
 
 
 }
+#long h2{
+    font-weight: 300;
+    font-size: 20px;
+
+    
+}
+
+
 #medium{
     width: 260px;
     height: 60px;
     border: 1px solid;
     border-radius: 20px;
+    display: flex;
 
+
+}
+#medium>p{
+margin-top: -1px;
+}
+#medium h2{
+    display: block;
+    font-weight: 1  00;
+    font-size: 19px;
+    margin-left: -80px;
+    margin-top: 20px;
+
+    
 }
 #small{
     box-sizing: border-box;
@@ -108,6 +148,7 @@ margin: auto;
     width: 190px;
     border: 1px solid;
     border-radius: 20px;
+   
 
 
 }
@@ -146,7 +187,7 @@ border: 3px solid #0a438b;
     border-radius: 20px;
     margin: auto;
     display: block;
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: 20px;
     border: #0a438b;
 }
@@ -174,7 +215,6 @@ cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     padding-left: 10px;
-   margin-top: -1px;
 }
 #gallery2{
 
@@ -194,12 +234,12 @@ margin-bottom: 30px;
 #pic1{
     background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_AllInclusive_imgB_1199x399_20211104.jpg");
    background-size: 100% 100%;
--webkit-filter: brightness(70%);
+/* -webkit-filter: brightness(70%); */
 }
 #pic2{
     background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_LastMinute_imgB_1199x399_20211104.jpg");
     background-size: 100% 100%;
-    -webkit-filter: brightness(70%);
+    /* -webkit-filter: brightness(70%); */
 }
 #white{
     color :white;
@@ -224,6 +264,11 @@ margin-bottom: 30px;
     margin-left: 25px;
 
 }
+#album>div:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
+
 #album img{
     height: 100%;
     width: 100%;
@@ -251,6 +296,7 @@ height: 90px;
 width: 90%;
 margin: auto;
 display: flex;
+margin-bottom: 50px;
 }
 #cancellation div{
 border: 1px solid;
@@ -260,8 +306,97 @@ border-radius: 12px;
     margin-left: 10px;
 
 }
+#cancellation div:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(93, 152, 5);
+}
 #cancellation>div h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 10px;
 
 }
+#download{
+    height: 400px;
+    width: 90%;
+margin: auto;
+    display: flex;
+    padding-top: 30px;
+
+}
+/* #download>div{
+    margin-top: 20px;
+border-radius: 10px;
+    height: 350px;
+    width: 50%;
+    border:solid 1px
+    
+} */
+#photo{
+    border-radius: 15px;
+    width: 30%;
+    height: 100%;
+
+}
+#download>div>img{
+    border-radius: 10px;
+   
+
+}
+#dtext{
+    width: 50%;
+    height: 100%;
+    padding-left: 15px;
+    background-color: white;
+}
+    #download li{
+line-height: 2.0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    #innerdiv{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        
+    }
+    #innerdiv>div{
+        
+        height: 60px;
+        width: 200px;
+        margin-left: 10px;
+        border-radius: 10px;
+        border: 1px solid;
+       
+    }
+    #qr{
+        height: 190px;
+        width: 190px;
+        padding-top: 30px;
+    }
+    #box{
+        display: flex;
+        width: 100%;
+    }
+    #box>div{
+        height: 90%;
+        width: 100px;
+        border: 1px solid;
+      
+        border-radius: 12px;
+    }
+    #blue{
+        width:100px;
+        background-color: #0a438b
+        ;
+        padding-left: 10px;
+        color: white;
+    }
+    #blue:hover{
+        cursor: pointer;
+       
+        box-sizing: border border-box;
+    }
+    #in{
+        margin-top: -10px;
+    }
