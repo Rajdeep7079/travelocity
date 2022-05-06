@@ -61,7 +61,7 @@ color: white;
     height: 600px;
     width: 100%;
     background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
-background-size: 100% 100%;
+    background-size: 100% 100%;
 
 }
 #counter{
@@ -234,12 +234,12 @@ margin-bottom: 30px;
 #pic1{
     background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_AllInclusive_imgB_1199x399_20211104.jpg");
    background-size: 100% 100%;
--webkit-filter: brightness(70%);
+/* -webkit-filter: brightness(70%); */
 }
 #pic2{
     background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_LastMinute_imgB_1199x399_20211104.jpg");
     background-size: 100% 100%;
-    -webkit-filter: brightness(70%);
+    /* -webkit-filter: brightness(70%); */
 }
 #white{
     color :white;

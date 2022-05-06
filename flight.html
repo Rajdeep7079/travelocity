@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight</title>
+    <style>
+        /* navbar */
+                        #navbar{
+                    width: 100%;
+                    background-color: #0a438b;
+                    height: 100px;
+                    display: flex;
+                }
+                #goingto{
+                    font-size: 20px;
+                    border: none;
+                    border: white;
+                    outline: none;
+
+                }
+                #body{
+                    background-color: whitesmoke;
+                }
+                #box1{
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                #box1>div{
+                width: 50%;
+                height: 100%;
+                }
+                #box1>div>img{
+                    height: 45px;
+                    padding: 20px;
+                }
+                #white1{
+                    color: white;
+                    font-size: 20px;
+                    padding: 20px;
+                    font-weight: 500;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                #vehicle1,#vehicle2{
+                    margin-top: 30px;
+                    size: 40px;
+                margin-left: 20px;
+                }
+                #box2{
+                    display: flex;
+                    width: 50%;
+                margin-left: 600px;
+                    
+                }
+                #box2 div{
+                width: 27%;
+                height: 100%;
+                color: white;
+                }
+                #box2 h2{
+                    font-size: 19px;
+                }
+                #box1,#box2 div:hover{
+                    cursor: pointer;
+                }
+
+                /* ticketing */
+
+                #ticket-counter{
+                    height: 600px;
+                    width: 100%;
+                    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+                    background-size: 100% 100%;
+
+                }
+                #counter{
+                width: 90%;
+                height: 400px;
+                background-color: white;
+                border-radius: 20px;
+                margin: auto;
+
+
+                }
+                #cat{
+                    width: 60%
+                    ;
+                    height: 70px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                #cat>div{
+                    width: 20%;
+                }
+                #cat>div:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                
+                }
+                #cat h2{
+                    color: grey;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                #select{
+                    display: flex;
+                    width: 90%;
+                    margin: auto;;
+                    justify-content: space-between;
+                }
+                #long{
+                    width: 400px;
+                    height: 60px;
+                    border-radius: 20px;
+                    border: 1px solid;
+                    display: flex;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+                    
+
+
+                }
+                #long h2{
+                    font-weight: 300;
+                    font-size: 20px;
+
+                    
+                }
+
+
+                #medium{
+                    width: 260px;
+                    height: 60px;
+                    border: 1px solid;
+                    border-radius: 20px;
+                    display: flex;
+
+
+                }
+                #medium>p{
+                margin-top: -1px;
+                }
+                #medium h2{
+                    display: block;
+                    font-weight: 1  00;
+                    font-size: 19px;
+                    margin-left: -80px;
+                    margin-top: 20px;
+
+                    
+                }
+                #small{
+                    box-sizing: border-box;
+                    height: 60px;
+                    width: 190px;
+                    border: 1px solid;
+                    border-radius: 20px;
+                
+
+
+                }
+                #small h4{
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+
+                }
+                #date{
+                    border: none;
+                }
+                #long:hover{
+                    box-sizing: border-box;
+                    cursor: pointer;
+                border: 4px solid #0a438b;
+                }
+                #medium:hover{
+                    cursor: pointer;
+                    box-sizing: border-box;
+
+                    border: 4px solid #0a438b;
+                }
+                #small:hover{
+                cursor: pointer;
+                box-sizing: border-box;
+
+                border: 3px solid #0a438b;
+                }
+                #btn1{
+                    cursor: pointer;
+                    width: 190px;
+                    height: 50px;
+                    background-color: #0a438b;
+                    color: white;
+                    border-radius: 20px;
+                    margin: auto;
+                    display: block;
+                    margin-top: 100px;
+                    font-size: 20px;
+                    border: #0a438b;
+                }
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div id="box1">
+            <div> 
+                <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt="">
+            </div>
+               
+           <div>
+                <select name="" id="abc" >
+                    <option value="" style="width: 10px;">More travel</option>
+
+                    <option value="Packages">Packages</option>
+                    <option value="Stays">Stays</option>
+                    <option value="Flights" >Flights</option>
+                    <option value="cars">cars   </option>
+
+                </select>
+           </div>
+        </div>
+        <div id="box2">
+            <div><h2 id="white1">List your property</h2></div>
+            <div><h2 id="white1">support</h2></div>
+            <div><h2 id="white1">Trips</h2></div>
+            <div><h2 id="white1">sign in</h2></div>
+        </div>
+    </div>
+
+    <!-- ticketing -->
+
+
+    <div id="ticket-counter">
+       
+        <div id="counter">
+                <div id="cat">
+                    <div><h2 id="ge">Stays</h2></div>
+                    <div><h2 ><a href="flight.html">Flights</a></h2></div>
+                    <div><h2 >Cars</h2></div>
+                    <div><h2>Packages    </h2></div>
+                    <div><h2 >Things to do</h2></div>
+                    <div><h2 >Cruises</h2></div>
+                
+                </div>
+                <hr width="80%">
+
+                <div id="select">
+                    <div id="long">
+                        <img height="40px" width="40px" style="padding: 10px 10px;" src="https://thumbs.dreamstime.com/b/blue-pin-symbol-blue-pin-symbol-isolated-white-background-176163168.jpg" alt="">
+                <!-- <h2>Going to</h2> -->
+                         <input type="text" placeholder="Going to" id="goingto">
+                    </div>
+                    <div  id="small"><h4>check in <br><input id="date" type="date"></h4></div>
+                    <div id="small"><h4>check-out <br><input id="date" type="date"></h4></div>
+                    <div id="medium">
+                        <img height="40px" width="40px" style="padding: 10px 10px;" src="https://thumbs.dreamstime.com/b/person-icon-flat-style-man-symbol-person-icon-flat-style-man-symbol-isolated-white-background-simple-people-abstract-icon-118611127.jpg" alt="">
+                        <p>Travellers</p><br>
+                        <h2>1 room,2 Travellers</h2>
+                    </div>
+
+                
+                </div>
+        
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Add a flight</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle1"> Add a car</label>
+    
+                    <button id="btn1"> Search</button>
+   
+    
+
+         </div>
+  
+    </div>
+
+</body>
+</html>
