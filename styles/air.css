@@ -1,0 +1,514 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#f0f3f5;
+}
+
+/* navbar */
+
+#navbar{
+    width: 100%;
+    background-color: #0a438b;
+    height: 100px;
+    display: flex;
+}
+#goingto{
+    font-size: 20px;
+    border: none;
+    border: white;
+    outline: none;
+
+}
+#body{
+    background-color: whitesmoke;
+}
+#box1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#box1>div{
+width: 50%;
+height: 100%;
+}
+#box1>div>img{
+    height: 45px;
+    padding: 20px;
+}
+#white1{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#vehicle1,#vehicle2{
+    margin-top: 30px;
+    size: 40px;
+   margin-left: 20px;
+}
+#box2{
+    display: flex;
+    width: 50%;
+   margin-left: 600px;
+    
+}
+
+
+#box2 div{
+width: 27%;
+height: 100%;
+color: white;
+}
+
+#box2 h2{
+    font-size: 19px;
+}
+#box1,#box2 div:hover{
+    cursor: pointer;
+}
+/* navbar ends */
+
+#mainAir{
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/05/11/TVLY_ThriftyRoadTripSweeps_imgB_1400x788_20210511z.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+    background-size: 100% 100%;
+    height:400px;
+    width:100%;
+    margin:auto;
+    margin-top:0px;
+    font-family:'Segoe UI';
+}
+#mainWhite{
+    width:80%;
+    height:90%;
+    margin:auto;
+    background-color:#ffffff;
+    align-items:center;
+    
+ 
+}
+#mainWhite h2:first-child{
+    margin-left:10px;
+    /* margin-top: */
+}
+#rental{
+    display:flex;
+    gap:15px;
+    margin-left:10px;
+    margin-top:-10px;
+    color:grey;
+    font-size:medium;
+    /* padding:10px; */
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#rental>button{
+    border-radius:10px;
+    background-color:#ffffff;
+    border:none;
+    margin-bottom:20px;
+    padding:10px;
+}
+#rental>button:hover{
+    background-color:#d7e7f2;
+    cursor:pointer;
+    border-radius:10px;
+    color:#2487d2;
+    
+
+}
+#spaceBet{
+    display:flex;
+    justify-content:space-between;
+
+}
+#countBtn{
+    border:none;
+    
+    background-color: white;
+    margin-right:15px;
+    color:#7b7bbf;
+    
+}
+#countBtn:hover{
+     border-bottom:.2px solid black; 
+     cursor:pointer;
+
+}
+
+#date{
+    display:grid;
+    grid-template-columns:repeat(4,23%);
+    grid-template-rows:30px;
+    gap:20px;
+    row-gap: 15px;
+    margin:auto;
+    justify-content:center;
+}
+#date>input{
+    border-radius:10px;
+    border:.2px solid grey;
+    padding:20px;
+}
+#checkBoxDiv{
+    display:flex;
+    margin-top:15px;
+    margin-left:15px;
+}
+#checkInput{
+    margin-top:11px;
+}
+#checkText{
+    font-size:12px;
+}
+
+#airSearch{
+    text-align:center;
+}
+#airSearch>button{
+    padding:8px 25px 8px 25px;
+    background-color:#0d5ab9;
+    color:#ffffff;
+    border:none;
+    border-radius:10px;
+    /* justify-content:center; */
+    margin:auto;
+    margin-top:50px;
+    width:100px;
+    height:auto;
+    font-size:medium;
+}
+#airSearch>button:hover{
+    cursor:pointer;
+    background-color:transparent blue;}
+
+
+
+
+    /* 1st box */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Merriweather+Sans:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Patua+One&family=Secular+One&display=swap');
+#featured-ma{
+    width: 80%;
+    height: 450px;
+    /* border: 1px solid black; */
+    margin: auto;
+    /* remove this margin-top it is too much  */
+    margin-top: 150px;
+}
+#featured-ma>h2{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding:  0px 10px 10px;
+    padding-left: 0px;
+
+}
+#big-box-ma{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    /* justify-content: space-between; */
+}
+#car-offers-box{
+    height: 100%;
+    width: 65%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+#car-offers-mg{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid skyblue; */
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    flex-direction: column;
+}
+#car-offer-img-box{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#car-offer-img-box>img{
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+#car-offer-text{
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid red; */
+    }
+#car-offer-text>h3{
+    font-size: 20px;
+    padding: 10px 10px 0px;
+    color: rgb(104, 104, 104);
+}
+#car-offer-text>p{
+    padding: 10px ;
+    font-size: 18px;
+    color: rgb(127, 127, 127);
+    margin-top:-25px;
+}
+   
+#left-offers-box{
+    height: 100%;
+    width: 35%;
+    /* border:  1px solid red; */
+    display: grid;
+    grid-gap: 15px;
+}
+.box-ma{
+    height: 190px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+.left-box-img-ma{
+    height: 100%;
+    width: 25%;
+    /* border: 1px solid brown; */
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.left-box-img-ma>img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.left-box-text-ma{
+    height: 40%;
+    width: 75%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.only-text-ma>h3{
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    padding: 10px 15px 5px;
+}
+.only-text-ma>p{
+    padding: 5px 30px;
+    color: rgb(78, 78, 78);
+}
+
+/* 1st box complete */
+
+/* 2nd box start */
+
+#advice-ma{
+    width:80%;
+    height:700px;
+    margin:auto;
+    margin-top:100px;
+}
+
+#advice-ma>h2{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding:  0px 10px 10px;
+    padding-left: 0px;
+    margin-top:25px;
+}
+#adviceMain{
+    display:flex;
+    flex-direction:row;
+    column-gap:10px;
+    justify-content:space-evenly;
+    margin:auto;
+    height:200px;
+    
+
+
+}
+#adviceMain>div:first-child{
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2020/11/11/Best_weekends_in_every_staate_Poconos.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size:100% 80%;
+    background-repeat:no-repeat;
+    border-radius:10px;
+    background-color:white;
+    /* border:1px solid red; */
+
+}
+#adviceMain>div:nth-child(2){
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2020/11/11/Best_US_road_trips_Million-Dollar-Highway.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size:100% 80%;
+    background-repeat:no-repeat;
+    border-radius:10px;
+    background-color:white;
+    /* border:1px solid red; */
+
+}
+#adviceMain>div:nth-child(3){
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2020/11/11/Bucket_list_family.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size:100% 80%;
+    background-repeat:no-repeat;
+    border-radius:10px;
+    background-color:white;
+    /* border:1px solid red; */
+
+}
+#adviceMain>div>h3{
+    color:#fff;
+    margin-top:120px;
+}
+#adviceMain>div>h3:hover{
+    cursor:pointer;
+}
+#adviceMain>div>p{
+    margin-top:20px;
+    color:grey;
+}
+
+/* 2nd box complete */
+
+/* 3rd box start */
+#spotMain{
+    width:80%;
+    height:220px;
+    margin:auto;
+    margin-top:-400px;
+}
+#spotMain>h2{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding:  0px 10px 10px;
+    padding-left: 0px;
+    margin-top:25px;
+}
+#spotDiv{
+    width:70%;
+    height:100%;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+}
+#spotDiv{
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/08/TVLY_LastMinuteGetaway_lpheroF_1320x742_20200708.jpg");
+    background-size:70% 100%;
+    background-repeat:no-repeat;
+    color:white;
+    background-blend-mode: darken;
+}
+#spotDiv>h3{
+    margin-top:140px;
+}
+
+/* 3rd box ends */
+
+
+
+/* carousel start*/
+
+
+
+
+
+
+/* carousel ends */
+
+
+
+/* download */
+
+/* download */
+
+#download{
+    height: 400px;
+    width: 80%;
+margin: auto;
+    display: flex;
+    padding-top: 30px;
+    margin-top:100px;
+
+}
+/* #download>div{
+    margin-top: 20px;
+border-radius: 10px;
+    height: 350px;
+    width: 50%;
+    border:solid 1px
+    
+} */
+#photo{
+    border-radius: 15px;
+    width: 30%;
+    height: 100%;
+
+}
+#download>div>img{
+    border-radius: 10px;
+   
+
+}
+#dtext{
+    width: 50%;
+    height: 100%;
+    padding-left: 15px;
+    background-color: white;
+}
+    #download li{
+line-height: 2.0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    #innerdiv{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        
+    }
+    #innerdiv>div{
+        
+        height: 60px;
+        width: 200px;
+        margin-left: 10px;
+        border-radius: 10px;
+        border: 1px solid;
+       
+    }
+    #qr{
+        height: 190px;
+        width: 190px;
+        padding-top: 30px;
+    }
+    #box{
+        display: flex;
+        width: 100%;
+    }
+    #box>div{
+        height: 90%;
+        width: 100px;
+        border: 1px solid;
+      
+        border-radius: 12px;
+    }
+    #blue{
+        width:100px;
+        background-color: #0a438b
+        ;
+        padding-left: 10px;
+        color: white;
+    }
+    #blue:hover{
+        cursor: pointer;
+       
+        box-sizing: border border-box;
+    }
+    #in{
+        margin-top: -10px;
+    }
