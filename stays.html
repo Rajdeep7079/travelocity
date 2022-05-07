@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stays</title>
+    <link rel="stylesheet" href="styleA.css">
+    <style>
+    #containerA>div{
+        display: flex;
+        width:90%;
+        height:150px;
+        /* border:red solid 1px; */
+        margin:auto;
+        margin:10px auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        /* justify-content: space-between; */
+    }
+    #containerA>div>div{
+        /* border:blue solid 1px; */
+        margin:5px;
+    }
+    #containerA>div>div:nth-child(1){
+        width:20%;
+        height:100%;
+    }
+    #containerA>div>div:nth-child(2){
+        width:70%;
+        height:100%;
+        /* display:flex; */
+        /* justify-content: end; */
+    }
+    
+    #containerA h2{
+       margin-top: 80px;
+    }
+    
+    #containerA img{
+        width:100%;
+        height:100%;
+    }
+
+    #containerA p{
+        line-height: 2px;
+    }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div id="box1">
+            <div> 
+                <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt="">
+            </div>
+               
+           <div>
+                <select name="" id="abc" >
+                    <option value="" style="width: 10px;">More travel</option>
+
+                    <option value="Packages">Packages</option>
+                    <option value="Stays">Stays</option>
+                    <option value="Flights" >Flights</option>
+                    <option value="cars">cars   </option>
+
+                </select>
+           </div>
+        </div>
+        <div id="box2">
+            <div><h2 id="white1">List your property</h2></div>
+            <div><h2 id="white1">support</h2></div>
+            <div><h2 id="white1">Trips</h2></div>
+            <div><h2 id="white1">sign in</h2></div>
+        </div>
+    </div>
+
+    <!-- ticketing -->
+
+
+    <div id="counter">
+                    <div >
+                        <img height="40px" width="40px"   src="https://thumbs.dreamstime.com/b/blue-pin-symbol-blue-pin-symbol-isolated-white-background-176163168.jpg" alt="">
+               
+                         <input type="text"  placeholder="Going to" id="goingto" style="border:0px">
+                    </div>
+                    <div  id="small" style="display:block;line-height:0px">
+                        <h4>check in </h4><br>
+                        <input id="date" type="date">
+                        
+                    </div>
+                    <div id="small"  style="display:block;line-height:0px;margin-top: 0px;">
+                        <h4>check-out </h4>
+                        <input id="date" type="date">
+                        
+                    </div>
+                    <div id="medium" >
+                        <img height="40px" width="40px"  src="https://thumbs.dreamstime.com/b/person-icon-flat-style-man-symbol-person-icon-flat-style-man-symbol-isolated-white-background-simple-people-abstract-icon-118611127.jpg" alt="">
+                        <p>Travellers</p><br>
+                        <p>1 room,2 Travellers</p><br>
+                    </div>
+                    <button id="btn1" onclick="search()"> Search</button>
+    </div>
+
+<!-- append hotels -->
+<div id="containerA"></div>
+
+</body>
+</html>
+<script>
+   var  objHotels=[
+                  {
+                   image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/81/4f/03/exterior.jpg?w=900&h=-1&s=1",
+                   address:"Patna",
+                   name:"Hotel Maurya",
+                   rate:4.1,
+                   price:99,
+                   tax:18,
+                  },
+                  {
+                    image: "https://ak-d.tripcdn.com/images/0222u1200084aa14t699C_R_550_412_R5_Q70_D.jpg",
+                    address: "Patna",
+                    name:"Lemon Tree Premier Patna",
+                    rate:4.2,
+                    price:119,
+                    tax:31,
+                  },
+                  {
+                    image: "https://ak-d.tripcdn.com/images/0226x120009bsbg6l5CDE_R_800_525.jpg",
+                    address:"Patna", 
+                    name:"Goroomgo Vivek Patna",
+                    rate:4,
+                    price:15,
+                    tax:2,
+                  },
+                   {
+                    image: "https://exp.cdn-hotels.com/hotels/76000000/75190000/75187000/75186957/449bdb9e_z.jpg?impolicy=fcrop&w=500&h=333&q=medium",
+                    address: "Patna",
+                    name:"Goroomgo Fellow Farm Patna",
+                    rate:4.3,
+                    price:16,
+                    tax:2,
+                  },
+                   {
+                    image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/337729268.jpg?k=a33c708ebb8f9e3a4b6db3c93239a662e5be3a1e018735a8d4eb19639a59708a&o=&hp=1",
+                    address:"Patna", 
+                    name:"The Grand Empire A Boutique Hotel",
+                    rate:4.2,
+                    price:66,
+                    tax:10,
+                  },
+                   {
+                    image:"https://media-cdn.tripadvisor.com/media/photo-s/19/f9/ae/54/hotel-patliputra-continental.jpg", 
+                    address: "Patna",
+                    name:"Hotel Patliputra Continental",
+                    rate:3.7,
+                    price:79,
+                    tax:9,
+                  }
+
+
+                ]
+
+                console.log(objHotels)
+const container=document.querySelector("#containerA");
+var query=document.querySelector("#goingto").value
+console.log(query)
+console.log("arun")
+
+   var search=()=>{ 
+
+    container.innerHTML=null;
+    objHotels.map(({image,address,name,rate,price,tax})=>{
+
+        console.log(address)
+            
+                // console.log(query)
+               var div1=document.createElement("div")
+               var div2=document.createElement("div")
+               var div3=document.createElement("div")
+               var div4=document.createElement("div")
+               div4.style.cursor="pointer"
+
+               var image1=document.createElement("img");
+               image1.src=image;
+               div1.append(image1);
+
+               var name1=document.createElement("h3");
+               name1.innerText=name;
+
+               var address1=document.createElement("p");
+               address1.innerText=address;
+               
+               var refund=document.createElement("p");
+               refund.innerText="Fully Refundable";
+
+               var date=document.createElement("p");
+               date.innerText="before thu, may 19";
+
+               var rating=document.createElement("h3");
+               rating.innerText=rate;
+
+               div2.append(name1,address1,refund,date,rating);
+
+            //    var member=document.createElement("span");
+            //    member.innerText="member discount available";
+            //    member.style.backgroundColor="";
+
+               var price1=document.createElement("h2");
+               price1.innerText=`$${price}`;
+
+               var totalPrice=document.createElement("p");
+               totalPrice.innerText=`$${Number(price)+Number(tax)} total`;
+               div3.append(price1,totalPrice);
+
+             div4.append(div1,div2,div3)
+             container.append(div4);
+
+             var obj={
+                 name,
+                 price,
+                 tax,
+             }
+
+             div4.addEventListener("click", ()=>{
+                  localStorage.setItem("hotel",JSON.stringify(obj));
+                  window.location.href="payment.html"
+             })
+               
+        
+             
+            //  else{
+            //     console.log("Search different location")
+            //  }
+    })
+
+}
+
+
+</script>

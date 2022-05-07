@@ -1,0 +1,114 @@
+#navbar{
+    width: 100%;
+    background-color: #0a438b;
+    height: 100px;
+    display: flex;
+}
+
+
+#body{
+    background-color: whitesmoke;
+}
+#box1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#box1>div{
+width: 50%;
+height: 100%;
+}
+#box1>div>img{
+    height: 45px;
+    padding: 20px;
+}
+#white1{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#box2{
+    display: flex;
+    width: 50%;
+   margin-left: 600px;
+    
+}
+#box2 div{
+width: 27%;
+height: 100%;
+color: white;
+}
+#box2 h2{
+    font-size: 19px;
+}
+#box1,#box2 div:hover{
+    cursor: pointer;
+}
+
+/* ticketing */
+#counter{
+    display:flex;
+    width:90%;
+    height:80px;
+    margin:auto;
+    /* border:red solid 1px; */
+    justify-content: space-between;
+    align-items: center;
+}
+#counter>div{
+   
+    display: flex;
+
+    height:50px;
+    border:black solid 1px;
+    align-items: center;
+    /* justify-content: center; */
+    padding:4px 10px;
+    border-radius: 10px;
+    /* line-height: 0px; */
+}
+#counter>div:nth-child(1){
+    width:30%;
+}
+
+#btn1{
+    width:15%;
+    height:50px;
+    background-color: #0a438b;
+    color: aliceblue;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#small input{
+    margin-top: -40px;
+}
+#counter>div:hover{
+    border:blue solid 1px;
+}
+#counter #goingto{
+    width:80%;
+    height:50px;
+    border:0px;
+}
+
+
+
+
+
+
+   
+
+   
+   
+    
+
+
+
+    
+
+
