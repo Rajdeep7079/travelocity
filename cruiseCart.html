@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/cruiseCart.css">
+    <title>cruiseCart</title>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    
+</body>
+</html>
+
+<script>
+
+var objArr = [
+{
+    img:"https://mediaim.expedia.com/cruise/cv_le/8e917421-09e8-4c6b-937a-f4c8375735f1.jpg?impolicy=resizecrop&ra=fit&rw=500",
+    crName:"Carnival Legend",
+    det:"Bahamas cruise",
+    departing:"Bahamas",
+    dates:"Before 20 May ",
+    price:429,
+    tax:99,
+    
+},
+{
+    img:"https://mediaim.expedia.com/cruise/rc_oa/86a326bd-169d-4d78-91c3-8aaa8e5345e9.jpg?impolicy=resizecrop&ra=fit&rw=500",
+    crName:"Oasis of the Seas",
+    det:"Bahamas cruise",
+    departing:"Bahamas",
+    dates:"Before 22 May ",
+    price:599,
+    tax:99,
+},
+{
+    img:"https://mediaim.expedia.com/cruise/ms-di/9db9774a-9c86-414c-8635-436ad603be1d.jpg?impolicy=resizecrop&ra=fit&rw=500",
+    crName:"MSC Divina",
+    det:"Bahamas cruise",
+    departing:"Bahamas",
+    dates:"Before 19 May ",
+    price:625,
+    tax:99,
+},
+{
+    img:"https://mediaim.expedia.com/cruise/rc_id/1e03c92c-a864-406d-b49a-4acf52b11a97.jpg?impolicy=resizecrop&ra=fit&rw=500",
+    crName:"Freedom of the Seas",
+    det:"Bahamas cruise",
+    departing:"Bahamas",
+    dates:"Before 23 May ",
+    price:699,
+    tax:99,
+},
+{
+    img:"https://mediaim.expedia.com/cruise/cv_sh/278b2736-f70d-42f1-bd91-39cc2c6fc6eb.jpg?impolicy=resizecrop&ra=fit&rw=500",
+    crName:"Carnival Sunshine",
+    det:"Bahamas cruise",
+    departing:"Bahamas",
+    dates:"Before 21 May ",
+    price:469,
+    tax:99,
+},
+{
+    img:"https://mediaim.expedia.com/cruise/cv_mc/cd5adafd-4aa5-432d-a899-b6258d9e8b5d.jpg?impolicy=resizecrop&ra=fit&rw=500",
+    crName:"Carnival of the Seas",
+    det:"Bahamas cruise",
+    departing:"Bahamas",
+    dates:"Before 24 May ",
+    price:799,
+    tax:99,
+},
+{
+    img:"https://mediaim.expedia.com/cruise/rc_fr/05e93dea-5d58-4162-a9d8-212e86fc1a18.jpg?impolicy=resizecrop&ra=fit&rw=500",
+    crName:"Oasis of the Seas",
+    det:"Bahamas cruise",
+    departing:"Bahamas",
+    dates:"Before 20 May ",
+    price:899,
+    tax:99,
+},
+
+]
+
+
+objArr.map(function(el,i){
+    console.log("in");
+    var container = document.querySelector("#container")
+
+        var box1 = document.createElement("div");
+        box1.setAttribute("class","box1");
+
+        var img = document.createElement("img");
+        img.src = el.img;
+        box1.append(img);
+
+        box2  = document.createElement("div");
+        box2.setAttribute("class","box2");
+
+        var p1 = document.createElement("p");
+        p1.innerText = el.crName;
+        p1.style.color = "blue";
+        p1.style.cursor = "pointer"
+        
+        var h3 = document.createElement("h3");
+        h3.innerText = el.det;
+
+        var p2 = document.createElement("p");
+        p2.innerText = el.departing;
+
+        var dates = document.createElement("p")
+        dates.innerText = "Departing : "+el.dates;
+
+        box2.append(p1,h3,p2,dates);
+
+        var box3 = document.createElement("div");
+        box3.setAttribute("class","box3")
+
+        var price = document.createElement("h3");
+        price.innerText = "Price: $"+el.price;
+
+        var tax = document.createElement("h3");
+        tax.innerText = "Tax: $"+ el.tax;
+
+        var btn = document.createElement("button");
+        btn.innerText = "Continue";
+        btn.style.backgroundColor = "#7bab02";
+        btn.style.width = "75px";
+        btn.style.cursor = "pointer";
+
+        btn.addEventListener("click",function(){
+            pay(el,i);
+        })
+
+
+
+        box3.append(price,tax,btn);
+
+        
+    
+
+       var box =  document.createElement("div")
+       box.setAttribute("id","box")
+
+        box.append(box1,box2,box3);
+
+        container.append(box);
+
+})
+var objArr = [];
+
+function pay(el,i){
+    var obj = {
+        name:el.det,
+        price:el.price,
+        tax:el.tax,
+    }
+    
+    objArr.push(obj);
+    localStorage.setItem("hotel",JSON.stringify(objArr));
+
+    window.location.href = "payments.html";
+}
+
+
+
+</script>
+    
