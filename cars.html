@@ -72,7 +72,7 @@
             </div>
             <div id="car-offer-text">
                     <h3>Car offers</h3>
-                    <p>Cruise into savings with special deals on select rental cars whenever you’re on the move.</p>
+                    <p style="margin-top:5px;">Cruise into savings with special deals on select rental cars whenever you’re on the move.</p>
             </div>
         </div>
         
@@ -128,7 +128,7 @@
             <h3>Bucket list road trips to take 
                 you with your family</h3>
             
-            <p>Travelling with your crew? here are 10 bucket lists
+            <p style="margin-top:-30px;">Travelling with your crew? here are 10 bucket lists
                 road trips to take with your family.
             </p>
         </div>
@@ -281,30 +281,8 @@ min.js"></script>
 
 <script>
 
-var objArr = JSON.parse(localStorage.getItem("display")) || [];
-document.querySelector("#search").addEventListener("click",myFun);
 
-function myFun(){
-    var pickup = document.querySelector("#pickup").value;
-    var dropup = document.querySelector("#dropup").value;
-    var date1 = document.querySelector("#d1").value;
-    var date2 = document.querySelector("#d2").value;
-    var time1 = document.querySelector("#t1").value;
-    var time2 = document.querySelector("#t2").value;
 
-    var obj = {
-        Pickup : pickup,
-        Dropup: dropup,
-        Date1:date1,
-        Date2:date2,
-        Time1:time1,
-        Time2:time2
-    }
-
-    objArr.push(obj);
-
-    localStorage.setItem("display",JSON.stringify(objArr));
-}
    
 
 
