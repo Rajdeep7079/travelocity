@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flight</title>
     <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="styleB.css">
     <style>
         /* navbar */
-                   
+        #containerB>div{
+        display: flex;
+        width:90%;
+        height:150px;
+        /* border:red solid 1px; */
+        margin:auto;
+        /* margin:10px auto; */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        justify-content: space-between;
+        padding:10px;
+    }
+    #containerB>div:hover{
+        border:black solid 1px;
+    }
+    #containerB h2{
+    text-align: end;
+    }
+    #btn1{
+        cursor: pointer;
+    }
     </style>
 </head>
 <body id="body">
@@ -42,50 +62,250 @@
     <!-- ticketing -->
 
 
-    <div id="ticket-counter">
-       
-        <div id="counter">
-                <div id="cat">
-                    <div><h2 id="ge">Stays</h2></div>
-                    <div><h2 ><a href="flight.html">Flights</a></h2></div>
-                    <div><h2 >Cars</h2></div>
-                    <div><h2>Packages    </h2></div>
-                    <div><h2 >Things to do</h2></div>
-                    <div><h2 >Cruises</h2></div>
-                
-                </div>
-                <hr width="80%">
-
-                <div id="select">
-                    <div id="long">
-                        <img height="40px" width="40px" style="padding: 10px 10px;" src="https://thumbs.dreamstime.com/b/blue-pin-symbol-blue-pin-symbol-isolated-white-background-176163168.jpg" alt="">
-                <!-- <h2>Going to</h2> -->
-                         <input type="text" placeholder="Going to" id="goingto">
-                    </div>
-                    <div  id="small"><h4>check in <br><input id="date" type="date"></h4></div>
-                    <div id="small"><h4>check-out <br><input id="date" type="date"></h4></div>
-                    <div id="medium">
-                        <img height="40px" width="40px" style="padding: 10px 10px;" src="https://thumbs.dreamstime.com/b/person-icon-flat-style-man-symbol-person-icon-flat-style-man-symbol-isolated-white-background-simple-people-abstract-icon-118611127.jpg" alt="">
-                        <p>Travellers</p><br>
-                        <h2>1 room,2 Travellers</h2>
-                    </div>
-
-                
-                </div>
-        
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Add a flight</label>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle1"> Add a car</label>
-    
-                    
-                    <button id="btn1"> Search</button>
+    <div id="counter">
+        <div >
+            <img height="40px" width="40px"   src="https://thumbs.dreamstime.com/b/blue-pin-symbol-blue-pin-symbol-isolated-white-background-176163168.jpg" alt="">
+             <!-- <p>Flying from</p> -->
+             <input type="text"  placeholder="Flying from" id="from" />
+        </div>
+        <div >
+            <img height="40px" width="40px"   src="https://thumbs.dreamstime.com/b/blue-pin-symbol-blue-pin-symbol-isolated-white-background-176163168.jpg" alt="">
    
-    
-
-         </div>
-  
+             <input type="text"  placeholder="Going to" id="to">
+        </div>
+        <div  id="small" style="display:block;line-height:2px">
+            <p>departing </p><br>
+            <input id="date1"  type="date">
+            
+        </div>
+        <div id="small"  style="display:block;line-height:2px;margin-top: 0px;">
+            <p>returning </p>
+            <input id="date2" type="date">
+            
+        </div>
+       
+        <button id="btn1" onclick="search()"> Search</button>
     </div>
+
+
+
+<!-- append hotels -->
+      <div id="containerB">
+
+      </div>
+
+      <!-- footer -->
+     
+      <!--  <footer class="footer"> -->
+        <div class="container">
+            <div class="row">
+ 
+             <div class="img"><img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="logo"/></div>
+ 
+                <div class="footer-col">
+                    
+                   
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                     <li><a href="#">Jobs</a></li>
+                     <li><a href="#">List your Property</a></li>
+                     <li><a href="#">Partnerships</a></li>
+                     <li><a href="#">Newsroom</a></li>
+                     <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Rooming Gnome Store</a></li>
+                        <li><a href="#">Adversting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Hotels in United States</a></li>
+                        <li><a href="#">Vacation Rentals in United States</a></li>
+                        <li><a href="#">Vacation Packages in United States</a></li>
+                        <li><a href="#">Domestic Flights</a></li>
+                        <li><a href="#">Car Rentals in United States</a></li>
+                     <li><a href="#">Travelocity Reviews</a></li>
+                     <li><a href="#">Travelocity Coupons</a></li>
+                     <li><a href="#">Unique Places to Stay</a></li>
+                     <li><a href="#">Travel Blog</a></li>   
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Do not sell my personal information</a></li>
+                    </ul>
+                </div>
+             <div class="footer-col">
+                 <h4>Help</h4>
+                 <ul>
+                     <li><a href="#">Support</a></li>
+                     <li><a href="#">Cancel your hotel or vacation rental booking</a></li>
+                     <li><a href="#">Cancel your flight</a></li>
+                     <li><a href="#">Refund timelines, policies & processes</a></li>
+                     <li><a href="#"></a></li>
+                 </ul>
+             </div>
+                
+            </div>
+ 
+        </div>
+        <hr></hr>
+        <p class="para">© 2022 Travelscape LLC, an Expedia Group Company. All rights reserved.<br>
+         Travelocity, the Stars Design, and The Roaming Gnome Design are trademarks or registered trademarks of Travelscape LLC. CST# 2056372-50.</p>
+ 
+ 
+      </footer> 
+ 
+
+
 
 </body>
 </html>
+<script >
+
+    var search=()=>{
+        console.log("arun")
+        var queryFrom=document.querySelector("#from").value;
+        var queryTo=document.querySelector("#to").value;
+
+        var dateFrom=document.querySelector("#date1").value;
+        var dateTo=document.querySelector("#date2").value;
+
+        document.querySelector("#containerB").innerHTML=null;
+
+        if(queryFrom=="" || queryTo=="" || dateFrom=="" || dateTo=="")
+        {
+            return alert("fill up details")
+        }
+
+        console.log(queryFrom,queryTo,dateFrom,dateTo)
+
+        var objFlights=[
+                        {
+                            time:"11:20am - 1:00pm",
+                            flight:"IndiGo",
+                            duration:"1h 40m (Nonstop)",
+                            price:155,
+
+                        },
+                        {
+                            time:"6:20pm - 1:00pm",
+                            flight:"Indigo",
+                            duration:"1h 40m (Nonstop)",
+                            price:155,
+
+                        },
+                        {
+                            time:"2:40pm - 4:25pm",
+                            flight:"Go First",
+                            duration:"1h 45m (Nonstop)",
+                            price:157,
+
+                        },
+                       
+                        {
+                            time:"8:05pm - 9:55pm",
+                            flight:"Go First",
+                            duration:"1h 50m (Nonstop)",
+                            price:161,
+
+                        },
+                        {
+                            time:"6:20pm - 1:00pm",
+                            flight:"Indigo",
+                            duration:"1h 40m (Nonstop)",
+                            price:155,
+
+                        },
+                        {
+                            time:"8:30pm - 10:20pm",
+                            flight:"Vistara",
+                            duration:"1h 50m (Nonstop)",
+                            price:171,
+
+                        },
+                        {
+                            time:"10:00am - 11:50am",
+                            flight:"Vistara",
+                            duration:"1h 40m (Nonstop)",
+                            price:172,
+
+                        },
+                      ]
+
+            if(queryFrom=="patna" && queryTo==="delhi") 
+            {
+                // document.querySelector("#containerB").innerHTML=null;
+               objFlights.map(({time,flight,duration,price})=>{
+
+       
+               var div1=document.createElement("div")
+               var div2=document.createElement("div")
+               var div3=document.createElement("div")
+               var div4=document.createElement("div")
+               div4.style.cursor="pointer";
+               
+
+               var time1=document.createElement("h3");
+               time1.innerText=time;
+
+               var para=document.createElement("p");
+               para.innerText=`Patna(PAT) - Delhi(DEL)`
+
+               var flight1=document.createElement("p");
+               flight1.innerText=flight;
+
+               var para2=document.createElement("p");
+               para2.innerText=`2 cleaning and safety practices`
+               div1.append(time1,para,flight1,para2);
+
+               var duration1=document.createElement("p");
+               duration1.innerText=duration;
+               div2.append(duration)
+
+            
+               var price1=document.createElement("h2");
+               price1.innerText=`$${price}`;
+
+               var para3=document.createElement("p");
+               para3.innerText="Roundtrip per traveler";
+               div3.append(price1,para3)
+
+             div4.append(div1,div2,div3)
+             document.querySelector("#containerB").append(div4);
+
+             var obj={
+                 time,
+                 flight,
+                 dateFrom,
+                 dateTo,
+                 price,
+                 
+             }
+
+             div4.addEventListener("click", ()=>{
+                  localStorage.setItem("hotel",JSON.stringify(obj));
+                //   document.querySelector("#popup").style.display = "flex";
+                  window.location.href="flightPayment.html"
+             })
+               
+        
+            
+             })
+
+            }   
+            else{
+                console.log("different")
+                document.querySelector("#containerB").append("Search for valid location")
+            }      
+
+    }
+
+
+   
+</script>

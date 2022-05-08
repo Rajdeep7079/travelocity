@@ -72,7 +72,10 @@ color: white;
     /* line-height: 0px; */
 }
 #counter>div:nth-child(1){
-    width:30%;
+    width:25%;
+}
+#counter>div:nth-child(2){
+    width:25%;
 }
 
 #btn1{
@@ -82,10 +85,12 @@ color: white;
     color: aliceblue;
     border-radius: 10px;
     border: 0px;
+    cursor: pointer;
 }
 
 #small input{
     margin-top: -40px;
+
 }
 #counter>div:hover{
     border:blue solid 1px;
@@ -96,19 +101,11 @@ color: white;
     border:0px;
 }
 
-
-
-
-
-
-   
-
-   
-   
-    
-
-
-
-    
-
-
+#counter #from,#to{
+    width:80%;
+    height:50px;
+    border:0px;
+}
+#counter input{
+    cursor: pointer;
+}
