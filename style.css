@@ -90,7 +90,7 @@ margin: auto;
  
 }
 #cat h2{
-    color: grey;
+    color:#505c66;
     font-size: 18px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -399,4 +399,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     #in{
         margin-top: -10px;
+    }
+    a{
+        text-decoration: none;
+        color:#505c66;
     }

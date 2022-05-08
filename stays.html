@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stays</title>
     <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="styleB.css">
     <style>
     #containerA>div{
         display: flex;
@@ -85,12 +86,12 @@
                     </div>
                     <div  id="small" style="display:block;line-height:0px">
                         <h4>check in </h4><br>
-                        <input id="date" type="date">
+                        <input id="date1" type="date">
                         
                     </div>
                     <div id="small"  style="display:block;line-height:0px;margin-top: 0px;">
                         <h4>check-out </h4>
-                        <input id="date" type="date">
+                        <input id="date2" type="date">
                         
                     </div>
                     <div id="medium" >
@@ -102,7 +103,77 @@
     </div>
 
 <!-- append hotels -->
-<div id="containerA"></div>
+        <div id="containerA">
+            
+        </div>
+
+        <!-- footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+     
+                 <div class="img"><img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="logo"/></div>
+     
+                    <div class="footer-col">
+                        
+                       
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                         <li><a href="#">Jobs</a></li>
+                         <li><a href="#">List your Property</a></li>
+                         <li><a href="#">Partnerships</a></li>
+                         <li><a href="#">Newsroom</a></li>
+                         <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Rooming Gnome Store</a></li>
+                            <li><a href="#">Adversting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">Hotels in United States</a></li>
+                            <li><a href="#">Vacation Rentals in United States</a></li>
+                            <li><a href="#">Vacation Packages in United States</a></li>
+                            <li><a href="#">Domestic Flights</a></li>
+                            <li><a href="#">Car Rentals in United States</a></li>
+                         <li><a href="#">Travelocity Reviews</a></li>
+                         <li><a href="#">Travelocity Coupons</a></li>
+                         <li><a href="#">Unique Places to Stay</a></li>
+                         <li><a href="#">Travel Blog</a></li>   
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Policies</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Do not sell my personal information</a></li>
+                        </ul>
+                    </div>
+                 <div class="footer-col">
+                     <h4>Help</h4>
+                     <ul>
+                         <li><a href="#">Support</a></li>
+                         <li><a href="#">Cancel your hotel or vacation rental booking</a></li>
+                         <li><a href="#">Cancel your flight</a></li>
+                         <li><a href="#">Refund timelines, policies & processes</a></li>
+                         <li><a href="#"></a></li>
+                     </ul>
+                 </div>
+                    
+                </div>
+     
+            </div>
+            <hr></hr>
+            <p class="para">© 2022 Travelscape LLC, an Expedia Group Company. All rights reserved.<br>
+             Travelocity, the Stars Design, and The Roaming Gnome Design are trademarks or registered trademarks of Travelscape LLC. CST# 2056372-50.</p>
+     
+     
+       </footer>
+       
 
 </body>
 </html>
@@ -160,20 +231,22 @@
 
                 ]
 
-                console.log(objHotels)
-const container=document.querySelector("#containerA");
-var query=document.querySelector("#goingto").value
-console.log(query)
-console.log("arun")
-
+                
    var search=()=>{ 
+            const container=document.querySelector("#containerA");
+        var query=document.querySelector("#goingto").value;
+        var date1=document.querySelector("#date1").value;
+        var date2=document.querySelector("#date2").value;
+        if(date1=="" || date2=="")
+           {
+               alert("Please fill all details")
+           }
+       else if(query==="patna")
+       {
+         
+            container.innerHTML=null;
+          objHotels.map(({image,address,name,rate,price,tax})=>{
 
-    container.innerHTML=null;
-    objHotels.map(({image,address,name,rate,price,tax})=>{
-
-        console.log(address)
-            
-                // console.log(query)
                var div1=document.createElement("div")
                var div2=document.createElement("div")
                var div3=document.createElement("div")
@@ -201,10 +274,6 @@ console.log("arun")
 
                div2.append(name1,address1,refund,date,rating);
 
-            //    var member=document.createElement("span");
-            //    member.innerText="member discount available";
-            //    member.style.backgroundColor="";
-
                var price1=document.createElement("h2");
                price1.innerText=`$${price}`;
 
@@ -223,15 +292,14 @@ console.log("arun")
 
              div4.addEventListener("click", ()=>{
                   localStorage.setItem("hotel",JSON.stringify(obj));
-                  window.location.href="payment.html"
+                  window.location.href="flightPayment.html"
              })
-               
-        
-             
-            //  else{
-            //     console.log("Search different location")
-            //  }
-    })
+         })     
+       }
+       else{
+           alert("serach for valid location")
+       }
+   
 
 }
 
