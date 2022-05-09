@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Nunito", sans-serif;
+      }
+      #top_menu {
+        margin-top: 10px;
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .img-logo {
+        height: 1.875rem;
+        margin: auto;
+      }
+
+      #arrow {
+        margin-left: 25px;
+        font-size: 20px;
+        color: #135eba;
+      }
+      a {
+        text-decoration: none;
+      }
+      hr {
+        width: 99%;
+        margin: auto;
+        border: 0.1px solid rgb(241, 241, 241);
+      }
+      #outer_box {
+        width: 99.5%;
+        height: 550px;
+        margin: auto;
+      }
+      #inner_box {
+        width: 30%;
+        height: 550px;
+        margin: auto;
+      }
+
+      #password {
+        appearance: none;
+        background-color: #fff;
+        border: 1px solid #848f99;
+        border-radius: 0.5rem;
+        color: #242c33;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 98%;
+        height: 40px;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-left: 10px;
+      }
+
+      #email {
+        appearance: none;
+        background-color: #fff;
+        border: 1px solid #848f99;
+        border-radius: 0.5rem;
+        color: #242c33;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 98%;
+        height: 40px;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-left: 10px;
+      }
+
+      h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2rem;
+      }
+
+      #terms {
+        margin-top: 35px;
+        margin-left: 5px;
+        color: #666666;
+        font-size: 13px;
+      }
+
+      #checkbox {
+        margin-left: 5px;
+        margin-top: 10px;
+      }
+
+      #label {
+        color: #3a3a3a;
+        font-size: 15px;
+      }
+
+      a {
+        color: #0d5ab9;
+      }
+
+      .logo {
+        width: 15px;
+      }
+
+      #sign_in {
+        height: 45px;
+        width: 100%;
+        border-radius: 0.5rem;
+        margin: auto;
+        margin-top: 15px;
+        border: none;
+        background-color: #a9c4e6;
+        font-size: large;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      input[type="submit"] {
+        color: white;
+      }
+      #sign_in:hover {
+        background-color: #3470e4;
+      }
+
+      #sign_a {
+        color: white;
+      }
+      h3 {
+        margin: auto;
+      }
+
+      #p1 {
+        margin-bottom: 25px;
+        font-size: 15px;
+        color: #3a3a3a;
+      }
+      #p2 {
+        margin-bottom: 35px;
+        font-size: 15px;
+        color: #3a3a3a;
+      }
+
+      #p3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #3a3a3a;
+      }
+
+      #bottom_logo {
+        display: flex;
+        justify-items: center;
+        width: 100%;
+      }
+
+      .logo1 {
+        width: 15px;
+        margin-left: 45%;
+      }
+      .logo2 {
+        width: 15px;
+        margin-left: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top_menu">
+      <a href="index.html"><h3 id="arrow">&#129120;</h3></a>
+      <img
+        class="img-logo"
+        src="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001"
+        alt="travelocity_logo"
+      />
+    </div>
+    <hr />
+    <div id="outer_box">
+      <div id="inner_box">
+        <h1>Sign in</h1>
+        <p style="font-size: 12px">
+          <span style="color: red; font-size: 12px"
+            >Incorrect email-id/Password
+          </span>
+          To create new account <a href="sign_up.html">CLICK HERE</a>
+        </p>
+        <form>
+          <input type="text" placeholder="Email address" id="email" />
+          <input type="password" placeholder="Password" id="password" />
+          <input type="checkbox" id="checkbox" />
+          <label id="label" for="checkbox"
+            >This is a public or shared device</label
+          >
+          <p id="terms">
+            By signing in, I agree to the Travelocity
+            <a href="#">Terms and Conditions</a> and
+            <a href="#"> Privacy Statement.</a>
+          </p>
+
+          <input type="submit" id="sign_in" value="Sign in" />
+        </form>
+
+        <center>
+          <a href="#"> <p id="p1">Forgot password?</p></a>
+          <p id="p2">
+            Don't have an account?<a href="sign_up.html"> Create one</a>
+          </p>
+          <p id="p3">or continue with</p>
+          <div id="bottom_logo">
+            <img
+              class="logo1"
+              src="https://a.travel-assets.com/egds/marks/apple.svg"
+              alt="apple_logo"
+            />
+            <img
+              class="logo2"
+              src="https://a.travel-assets.com/egds/marks/facebook.svg"
+              alt="facebook_logo"
+            />
+          </div>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", loginFun);
+  var regdUsers = JSON.parse(localStorage.getItem("userCreds"));
+  //console.log(regdUsers);
+
+  function loginFun() {
+    event.preventDefault();
+    var enteredEmail = document.querySelector("#email").value;
+    var enteredPass = document.querySelector("#password").value;
+    //console.log(email, pass);
+
+    for (var i = 0; i < regdUsers.length; i++) {
+      console.log(regdUsers[i]);
+      if (
+        regdUsers[i].email == enteredEmail &&
+        regdUsers[i].password == enteredPass
+      ) {
+        alert("login success");
+        window.location.href = "index.html";
+        break;
+      } else if (
+        regdUsers[i].email !== enteredEmail &&
+        regdUsers[i].password == enteredPass
+      ) {
+        alert("Incorrect Email id");
+        window.location.href = "sign_in.html";
+      } else {
+        window.location.href = "login_fail.html";
+      }
+    }
+  }
+</script>
