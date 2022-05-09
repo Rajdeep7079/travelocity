@@ -144,7 +144,7 @@ margin-top: -1px;
 }
 #small{
     box-sizing: border-box;
-    height: 70px;
+    height: 60px;
     width: 190px;
     border: 1px solid;
     border-radius: 20px;
@@ -411,17 +411,17 @@ body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
-*{
+/* *{
 	margin:10px 0 0 0;
 	padding:0;
 	box-sizing: border-box;
-}
+} */
 .container1{
 	max-width: 1170px;
 	margin:auto;
 }
 .img{
-	margin-right: 50px;
+	margin:30px 20px 50px 0;
 }
 .row{
 	display: flex;
@@ -453,6 +453,7 @@ ul{
 	margin-bottom: 15px;
 	font-weight: 500;
 	position: relative;
+    margin-right: 50px;
 }
 .footer-col h4::before{
 	content: '';
